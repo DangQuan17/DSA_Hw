@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSA_Hw.iml" filepath="$PROJECT_DIR$/DSA_Hw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack_Queue/Stack_Queue.iml" filepath="$PROJECT_DIR$/Stack_Queue/Stack_Queue.iml" />
     </modules>
   </component>
 </project>

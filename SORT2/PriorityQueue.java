@@ -1,4 +1,3 @@
-
 public class PriorityQueue {
     private int[] queue;
     private int size;
@@ -22,10 +21,6 @@ public class PriorityQueue {
 
     // Xóa và trả về phần tử nhỏ nhất
     public int deleteMin() {
-        if (size == 0) {
-            throw new IllegalStateException("Queue is empty!");
-        }
-
         int minIndex = 0;
         for (int i = 1; i < size; i++) {
             if (queue[i] < queue[minIndex]) {

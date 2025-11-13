@@ -6,6 +6,8 @@ Tóm tắt: Kiểm tra xem các dấu đóng mở ngoặc {[()]} có đúng qui 
               nếu có thì pop ra, nếu ko thì chuỗi ko hợp lệ
  */
 
+import java.io.IOException;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedBrackets {

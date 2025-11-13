@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 // đây là bản chuyển thể từ hackerrank sang để có thể chạy trên này
 
-class Result {
+class Result6 {
 
     public static List<Integer> quickSort(List<Integer> arr) {
         if (arr == null || arr.size() <= 1) return arr;
@@ -30,13 +30,13 @@ class Result {
     private static int partition(int[] arr, int start, int end) {
         int pivot = arr[end];
         int i = start - 1;
+
         for (int j = start; j < end; j++) {
             if (arr[j] <= pivot) {
-                i++;
                 swap(arr, i, j);
             }
         }
-        swap(arr, i + 1, end);
+        swap(arr, i + 1, end);  // i + 1: phần tử đầu tiên của vùng > pivot
         return i + 1;
     }
 
@@ -51,7 +51,7 @@ public class Quicksort1_Partition {
     public static void main(String[] args) throws IOException {
         // Test nhanh
         List<Integer> arr = Arrays.asList(4, 5, 3, 7, 2);
-        List<Integer> result = Result.quickSort(arr);
+        List<Integer> result = Result6.quickSort(arr);
 
         for (int num : result) {
             System.out.print(num + " ");
